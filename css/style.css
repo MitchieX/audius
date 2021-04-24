@@ -1,47 +1,5 @@
 @charset "UTF-8";
-/* ------------------------------------------------
 
-Page	: Proland CSS
-Version : 1.0
-Author  : Surjith S M
-URI     : http://themeforest.net/user/surjithctly
-
-Copyright © All rights Reserved
-Surjith S M / @surjithctly
-
--------------------------------------------------- */
-/*=====================================================================
-
-
-@Default Styles
-
-Table of Content:
-01/ Prefix
-02/ Header
-03/ The Product
-04/ How it Works
-05/ The Benefits
-06/ Left Right Content
-07/ Our Collection
-08/ The Watch
-09/ Splt Columns
-10/ Reviews
-11/ FAQs
-12/ Tech Specs
-13/ Our Team
-14/ Timeline
-15/ Mobile App
-16/ Newsletter
-17/ Contact
-18/ Footer
-19/ Page Header
-20/ Blog
-21/ Sidebar
-22/ Comments
-23/ Products
-24/ Exit Popup
-
-=====================================================================*/
 /*========= @import Global & Variables ==========*/
 /*Color Variables*/
 /*============= Global =============*/
@@ -560,6 +518,12 @@ textarea.form-control {
 
 /*========= @import Components ==========*/
 /*=========Prefix==========*/
+
+.ajust-button {
+ 
+  padding-top: 3rem;
+}
+
 .m0 {
   margin: 0;
 }
@@ -4321,4 +4285,95 @@ footer.row {
   border: 0;
 }
 
-/*# sourceMappingURL=style.css.map */
+/* TABLE */
+
+body {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.25;
+}
+
+table {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  table-layout: fixed;
+}
+
+table caption {
+  font-size: 1.5em;
+  margin: .5em 0 .75em;
+}
+
+table tr {
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  padding: .35em;
+}
+
+tbody td {
+  color: black;
+}
+
+table th,
+table td {
+  padding: .625em;
+  text-align: center;
+}
+
+table th {
+  font-size: .85em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+@media screen and (max-width: 600px) {
+  table {
+    border: 0;
+  }
+
+  table caption {
+    font-size: 1.3em;
+  }
+  
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  
+  table tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: .625em;
+  }
+  
+  table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: .8em;
+    text-align: right;
+  }
+  
+  table td::before {
+    /*
+    * aria-label has no advantage, it won't be read inside a table
+    content: attr(aria-label);
+    */
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  table td:last-child {
+    border-bottom: 0;
+  }
+}
