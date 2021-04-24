@@ -2,7 +2,7 @@
 if(isset($_POST['email'])) {
  
     // EDIT THE 2 LINES BELOW AS REQUIRED
-    $email_to = "atendimento@smartaudius.com.br";
+    $email_to = "emerson@widexbahia.com.br";
     $email_subject = "Contato pelo Site";
  
     function died($error) {
@@ -90,7 +90,7 @@ if(isset($_POST['email'])) {
     $email_message .= "Mensagem: ".clean_string($comments)."\n";
  
 // create email headers
-$headers = 'From: [CONTATO] Lidio Rosa <'.$email_from.">\r\n".
+$headers = 'From: Site Smart Audius <'.$email_from.">\r\n".
 'Reply-To: '.$email_from."\r\n" .
 'X-Mailer: PHP/' . phpversion();
 mail($email_to, $email_subject, $email_message, $headers);  
