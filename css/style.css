@@ -731,13 +731,13 @@ textarea.form-control {
   margin-left: 0;
   padding: 0;
   height: 55px;
-  width: 203px;
+  width: 170px;
   transition: all 300ms linear 0s;
 }
 
 @media (max-width: 991px) {
   .navbar .navbar-header .navbar-brand {
-    width: 150px;
+    width: 140px;
     height: 40px;
   }
 }
@@ -752,7 +752,7 @@ textarea.form-control {
 }
 
 .navbar.is-scrolling .navbar-header .navbar-brand {
-  width: 150px;
+  width: 130px;
   height: 40px;
 }
 
@@ -981,6 +981,7 @@ header.video-bg {
 
 #main-navbar .dropdown-menu li a {
   padding: 0 25px;
+  color: #000;
 }
 
 /* ------- Play Video ------- */
