@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!--========== Page Ttile ==========-->
-    <title>Audius | Moment</title>
+    <title>Smart Audius | Moment</title>
 
     <!-- FAVICON -->
 	<link href="images/favicon.png" rel="shortcut icon"/>
@@ -59,7 +59,7 @@
 
     <!--==========Header==========-->
     <header class="row" id="header">
-        <nav class="navbar navbar-default navbar-fixed-top">
+        <nav class="navbar navbar-default-2 navbar-fixed-top">
             <div class="container">
                 <!--========== Brand and toggle get grouped for better mobile display ==========-->
                 <div class="navbar-header">
@@ -286,13 +286,51 @@
             <div class="row m0 menu-rights">
                
                 <p style="color: black;"><!-- copyright-->
-                    Copyright &copy;<script>document.write(new Date().getFullYear());</script> Todos os direitos reservados | Site criado com <a href="https://www.linkedin.com/in/nathalia-ornelas/" title="Programador" alt="Programador" style="color: red;"><i class="fa fa-heart" aria-hidden="true"></i></a> por <a href="www.salvacomunicacao.com" target="_blank">Salva Comunicação</a>
+                    Copyright &copy;<script>document.write(new Date().getFullYear());</script> Todos os direitos reservados | Site criado com <a href="https://www.linkedin.com/in/nathalia-ornelas/" title="Programador" alt="Programador" style="color: red;"><i class="fa fa-heart" aria-hidden="true"></i></a> por <a href="https://agenciasalva.com/" target="_blank">Salva Comunicação</a>
                     <!-- copyright --></p>
             </div>
         </div>
     </footer>
 
     <!--========== Javascript Files ==========-->
+    
+         <!--WHATSAPP-->
+     <script>
+    var url = 'https://wati-integration-service.clare.ai/ShopifyWidget/shopifyWidget.js?73730';
+    var s = document.createElement('script');
+    s.type = 'text/javascript';
+    s.async = true;
+    s.src = url;
+    var options = {
+  "enabled":true,
+  "chatButtonSetting":{
+      "backgroundColor":"#002d72",
+      "ctaText":"Contate-nos",
+      "borderRadius":"25",
+      "marginLeft":"0",
+      "marginBottom":"50",
+      "marginRight":"50",
+      "position":"right"
+  },
+  "brandSetting":{
+      "brandName":"Smart Audius",
+      "brandSubTitle":"Mais que um centro auditivo, um centro de soluções!",
+      "brandImg":"https://cdn.clare.ai/wati/images/WATI_logo_square_2.png",
+      "welcomeText":"Olá!\nComo podemos te ajudar hoje?",
+      "messageText":"Olá, vim pelo site de vocês.",
+      "backgroundColor":"#002d72",
+      "ctaText":"Iniciar conversa",
+      "borderRadius":"25",
+      "autoShow":false,
+      "phoneNumber":"557133593993"
+  }
+};
+    s.onload = function() {
+        CreateWhatsappChatWidget(options);
+    };
+    var x = document.getElementsByTagName('script')[0];
+    x.parentNode.insertBefore(s, x);
+</script>
 
     <!-- jQuery Latest -->
     <script src="js/lib/jquery-2.2.0.min.js"></script>
